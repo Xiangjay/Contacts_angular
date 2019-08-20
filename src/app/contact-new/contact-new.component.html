@@ -1,0 +1,19 @@
+<h2 class="sub-header">新增联系人</h2>
+<form (submit) = "addContact()">
+    <div class="form-group">
+        <label for="inputName">姓名</label>
+        <input type="text" id="inputName" class="form-control" placeholder="Name" required
+            [(ngModel)]="newContact.name" name="name" #email="ngModel">
+    </div>
+    <div class="form-group">
+        <label for="inputEmail">邮箱</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required
+            [(ngModel)]="newContact.email" name="email" #email="ngModel">
+    </div>
+    <div class="form-group">
+        <label for="inputPhone">电话</label>
+        <input type="text" id="inputPhone" class="form-control" placeholder="Phone" required
+            [(ngModel)]="newContact.phone" name="phone" #email="ngModel">
+    </div>
+    <button type="submit" class="btn btn-info">创建</button>
+</form>
